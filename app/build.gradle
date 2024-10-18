@@ -32,5 +32,5 @@ version = '0.0.1'
 
 application {
     // Define the main class for the application.
-    mainClass = 'fr.parisnanterre.devops-ch3.backend.App' //ici c'est une arborescence de fichiers, 
+    mainClass = 'fr.parisnanterre.devopsch3.backend.App' //ici c'est une arborescence de fichiers, 
 }
