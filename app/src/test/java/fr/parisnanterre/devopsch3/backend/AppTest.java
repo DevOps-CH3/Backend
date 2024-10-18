@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 
 public class AppTest {
-    //nous allons tester l'API
+    //nous allons tester l'API ! 
     
     @Test public void checkApiRun(){
         assertDoesNotThrow(() -> App.main(new String[] {})); //test très basique, pour vérifier si toutes les méthodes fonctionnent bien, si y'a pas de vulnérabilités 
