@@ -3,8 +3,19 @@
  */
 package fr.parisnanterre.devopsch3.backend;
 
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+@SpringBootTest //injection du framework de test pour pouvoir lancer l'API
 
 
 public class AppTest {
+    //nous allons tester l'API
     
+    @Test public void checkApiRun(){
+        assertDoesNotThrow(() -> App.main(new String[] {})); //test très basique
+    }
+
 }

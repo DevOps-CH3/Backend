@@ -17,8 +17,9 @@ repositories {
 
 dependencies {
     // Use JUnit test framework.
-    testImplementation libs.junit
     implementation 'org.springframework.boot:spring-boot-starter-web:3.3.3' //on ajoute cette librairie spring qui permet de créer des API facilement
+    testImplementation libs.junit
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.3.3'
 
 }
 
