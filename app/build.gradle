@@ -19,8 +19,6 @@ dependencies {
     // Use JUnit test framework.
     testImplementation libs.junit
 
-    // This dependency is used by the application.
-    implementation libs.guava
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -29,8 +27,10 @@ java {
         languageVersion = JavaLanguageVersion.of(21)
     }
 }
+group = 'fr.parisnanterre.devops-ch3' //Group ID
+version = '0.0.1'
 
 application {
     // Define the main class for the application.
-    mainClass = 'org.example.App'
+    mainClass = 'fr.parisnanterre.devops-ch3.backend.App' //ici c'est une arborescence de fichiers, 
 }
