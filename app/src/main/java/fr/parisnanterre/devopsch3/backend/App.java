@@ -3,13 +3,14 @@
  */
 package fr.parisnanterre.devopsch3.backend;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication //pour définir que la classe est de type Spring
 public class App {
     
 
     public static void main(String[] args) {
-        
+        SpringApplication.run(App.class, args); //quand on lance la main, alors on lance l'application SpringBoot
     }
 }
