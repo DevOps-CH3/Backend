@@ -5,10 +5,28 @@
  * For more details on building Java & JVM projects, please refer to https://docs.gradle.org/8.8/userguide/building_java_projects.html in the Gradle documentation.
  */
 
-plugins {
+plugins { //une sorte de dépendance qui va être pour le process de build
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'jacoco'
 }
+
+jacoco {
+    toolVersion = "0.8.12" // JaCoCo version!
+}
+
+jacocoTestReport {
+    reports {
+        xml.required.set(true) // Necessary for badge services to read reports
+        html.required.set(true) //on veut des rapports xml/html
+    }
+}
+//on veut lancer jacoco quand on fait les tests
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport // Après avoir testé, on veut lancer jacoco pour lancer le rapport de test
+}
+
 
 repositories {
     // Use Maven Central for resolving dependencies.
