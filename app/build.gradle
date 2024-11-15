@@ -23,7 +23,7 @@ jacocoTestReport {
 }
 //on veut lancer jacoco quand on fait les tests
 test {
-    useJUnitPlatform()
+    
     finalizedBy jacocoTestReport // Après avoir testé, on veut lancer jacoco pour lancer le rapport de test
 }
 
