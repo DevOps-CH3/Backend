@@ -1,4 +1,4 @@
-#
+#T
 name: Java CI Gradle build and test #nom du script, nom qui sera affiché dans les github actions
 
 on: #a quel moment va-t-on déclencher l'action (au moment d'un push pour nous)
