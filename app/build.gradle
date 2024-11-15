@@ -9,6 +9,16 @@ plugins { //une sorte de dépendance qui va être pour le process de build
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
     id 'jacoco'
+    id "org.sonarqube" version "5.1.0.4882"
+
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "DevOps-CH3_Backend"
+    property "sonar.organization", "devops-ch3"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 jacoco {
