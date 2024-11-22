@@ -6,3 +6,6 @@
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=DevOps-CH3_Backend&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=DevOps-CH3_Backend)
 
+
+API Documentation :  http://localhost:8080/swagger-ui.html
+
